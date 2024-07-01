@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .navbar-fixed {
+            z-index: 1000;
+            /* Menetapkan z-index */
+        }
+    </style>
 </head>
 
 <body>
     <!-- NAVBAR START -->
-    <div class="bg-purple-700 border-purple-700">
+    <div class="fixed top-0 w-full navbar-fixed bg-blue-800 shadow-lg" id="navbar">
         <div class="container mx-auto flex justify-between items-center py-4 px-20">
-            <h1 class="text-base text-white font-bold uppercase ">Portfolio</h1>
+            <a href="#beranda" class="text-base text-white font-bold uppercase">Portfolio</a>
             <ul class="flex space-x-5 text-white">
                 <li><a href="#" class="hover:text-gray-300">Home</a></li>
                 <li><a href="#" class="hover:text-gray-300">Travel</a></li>
@@ -19,7 +25,6 @@
             </ul>
         </div>
     </div>
-
     <!-- NAVBAR END -->
 
     <!-- CONTENT START -->
@@ -47,7 +52,7 @@
     <div class="flex justify-center py-5">
         <h1 class="font-bold text-6xl font-mono">TRAVEL</h1>
     </div>
-    <section class="bg-slate-100 py-5">
+    <section class="bg-white py-5 flex flex-wrap justify-start">
         <div class="container mx-auto px-20 flex flex-wrap">
             <div class="w-full lg:w-1/2 pr-4">
                 <h1 class="text-lg font-bold font-serif">Open Trip</h1>
@@ -72,8 +77,10 @@
             <div class="w-full lg:w-1/2 px-20">
                 <img src="public/img/OT Bromo.png" alt="" class="w-[70vh] h-[45vh] rounded-2xl">
             </div>
-            <div class="container flex flex-wrap justify-center mt-3">
-                <button class="bg-transparent border-black border-2 px-8 py-3 uppercase hover:bg-purple-500 hover:text-white hover:border-purple-500 hover:border-2">Booking Now</button>
+            <div class="container flex flex-wrap justify-center mt-10">
+                <button
+                    class="bg-transparent border-black border-2 px-8 py-3 uppercase hover:bg-purple-500 hover:text-white hover:border-purple-500 hover:border-2">Booking
+                    Now</button>
             </div>
         </div>
     </section>
@@ -81,12 +88,12 @@
 
     <!-- CONTENT GALLERY START -->
     <section>
-        <div class="flex flex-col items-center py-5">
+        <div class="flex flex-col items-center py-20">
             <h1 class="font-mono font-bold text-6xl">GALLERY</h1>
             <span class="block font-bold font-mono text-dark text-6xl">GUNUNG BROMO</span>
         </div>
-        <div class="bg-white py-5">
-            <div class="container grid grid-cols-3   gap-6 px-40">
+        <div class="bg-white py-0">
+            <div class="container grid grid-cols-3 gap-6 px-40">
                 <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
                     <img class="w-full" src="public/img/penanjakan bromo.jpg" alt="Penanjakan Bromo">
                     <div class="px-6 py-4">
@@ -94,9 +101,12 @@
                             Penanjakan Bromo
                         </div>
                         <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus consectetur laboriosam error hic non debitis voluptas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque
+                            velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus
+                            consectetur laboriosam error hic non debitis voluptas!
                         </p>
-                        <button class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>  
+                        <button
+                            class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>
                     </div>
                 </div>
                 <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
@@ -106,9 +116,12 @@
                             Bukit Cinta
                         </div>
                         <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus consectetur laboriosam error hic non debitis voluptas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque
+                            velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus
+                            consectetur laboriosam error hic non debitis voluptas!
                         </p>
-                        <button class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>  
+                        <button
+                            class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>
                     </div>
                 </div>
                 <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
@@ -118,9 +131,12 @@
                             Kawah Gunung Bromo
                         </div>
                         <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus consectetur laboriosam error hic non debitis voluptas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque
+                            velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus
+                            consectetur laboriosam error hic non debitis voluptas!
                         </p>
-                        <button class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>  
+                        <button
+                            class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>
                     </div>
                 </div>
                 <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
@@ -130,33 +146,42 @@
                             Kawah Gunung Bromo
                         </div>
                         <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus consectetur laboriosam error hic non debitis voluptas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque
+                            velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus
+                            consectetur laboriosam error hic non debitis voluptas!
                         </p>
-                        <button class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>  
+                        <button
+                            class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>
                     </div>
                 </div>
                 <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
-                    <img src="public/img/bukit teletubis.jpg" class="w-full h-56" alt="">
+                    <img class="w-full h-56" src="public/img/bukit teletubis.jpg" alt="Penanjakan Bromo">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">
-                            Bukit Teletubies
+                            Bukit Teletubbies
                         </div>
                         <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus consectetur laboriosam error hic non debitis voluptas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque
+                            velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus
+                            consectetur laboriosam error hic non debitis voluptas!
                         </p>
-                        <button class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>  
+                        <button
+                            class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>
                     </div>
                 </div>
                 <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
-                    <img src="public/img/pasir berbisik.jpg" class="w-full h-56" alt="">
+                    <img class="w-full h-56" src="public/img/pasir berbisik.jpg" alt="Penanjakan Bromo">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">
                             Pasir Berbisik
                         </div>
                         <p class="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus consectetur laboriosam error hic non debitis voluptas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sunt officiis explicabo eaque
+                            velit veritatis distinctio repudiandae rerum, quos dicta minus blanditiis delectus
+                            consectetur laboriosam error hic non debitis voluptas!
                         </p>
-                        <button class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>  
+                        <button
+                            class="bg-transparent rounded-md border-2 mt-2 px-5 py-2 hover:bg-purple-500 hover:text-white uppercase">Selengkapnya</button>
                     </div>
                 </div>
             </div>
@@ -164,11 +189,23 @@
     </section>
     <!-- CONTENT GALLERY END -->
 
-    <!-- CONTENT NAVBAR START -->
-    <section class="bg-purple-700 py-5 px-20 mt-10">
-        <h1>NAVBAR</h1>
-    </section>
-    <!-- CONTENT NAVBAR END -->
+    <!-- CONTENT FOOTER START -->
+    <footer class="bg-gray-500 text-center text-white mt-10">
+        <div class="container mx-auto py-5">
+            <p>Copyright © 2022. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('bg-scroll');
+            } else {
+                navbar.classList.remove('bg-scroll');
+            }
+        });
+    </script>
 </body>
 
 </html>
