@@ -8,14 +8,14 @@
     <style>
         .navbar-fixed {
             z-index: 1000;
-            /* Menetapkan z-index */
+            transition: background-color 0.3s;
         }
     </style>
 </head>
 
 <body>
     <!-- NAVBAR START -->
-    <div class="fixed top-0 w-full navbar-fixed bg-blue-800 shadow-lg" id="navbar">
+    <div id="navbar" class="fixed top-0 w-full navbar-fixed bg-transparent shadow-lg">
         <div class="container mx-auto flex justify-between items-center py-4 px-20">
             <a href="#beranda" class="text-base text-white font-bold uppercase">Portfolio</a>
             <ul class="flex space-x-5 text-white">
@@ -199,11 +199,8 @@
     <script>
         window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
-            if (window.scrollY > 0) {
-                navbar.classList.add('bg-scroll');
-            } else {
-                navbar.classList.remove('bg-scroll');
-            }
+            navbar.classList.toggle('bg-blue-800', window.scrollY > 0);
+            navbar.classList.toggle('bg-transparent', window.scrollY === 0);
         });
     </script>
 </body>
