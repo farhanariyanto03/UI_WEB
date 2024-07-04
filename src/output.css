@@ -612,14 +612,6 @@ video {
   top: 25%;
 }
 
-.z-auto {
-  z-index: auto;
-}
-
-.-z-50 {
-  z-index: -50;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -781,14 +773,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-fixed {
-  background-attachment: fixed;
-}
-
-.bg-scroll {
-  background-attachment: scroll;
-}
-
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -938,10 +922,6 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .hover\:border:hover {
